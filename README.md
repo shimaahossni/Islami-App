@@ -13,8 +13,8 @@ This project is a starting point for a Flutter application.
 
 ### its some features from our app
 
-![7](https://github.com/user-attachments/assets/c9005c17-a0f5-480c-ade0-d9f9efc059c0)
-![6](https://github.com/user-attachments/assets/8c60c6d0-84a4-4ac3-bc67-48585d90edf2)
+[(https://github.com/user-attachments/assets/c9005c17-a0f5-480c-ade0-d9f9efc059c0)
+](https://github.com/user-attachments/assets/8c60c6d0-84a4-4ac3-bc67-48585d90edf2)
 ![5](https://github.com/user-attachments/assets/d9f13954-18f3-4fe6-9b20-b23e689114be)
 ![4_4](https://github.com/user-attachments/assets/2b77cf8e-daeb-4f93-8d7f-c2da4e3b9eb0)
 ![4_3](https://github.com/user-attachments/assets/ccb1d418-b4bf-4c32-bcd1-91ad7d0aa3c6)
