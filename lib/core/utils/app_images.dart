@@ -49,6 +49,6 @@ class AppImages {
   static const String mask2Png = "assets/images/mask2.png";
   static const String prayerSliderPng = "assets/images/prayerSlider.png";
   static const String quranReadPng = "assets/images/quran_read.png";
-  static const String qiblaPng="assets/images/qibla.png";
-  static const String needlePng="assets/images/needle.png";
+  static const String qiblaPng = "assets/images/qibla.png";
+  static const String needlePng = "assets/images/needle.png";
 }

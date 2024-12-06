@@ -10,13 +10,13 @@ class SliderBgPosTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaquery = MediaQuery.of(context).size;
     return Positioned(
-                                top: 10,
-                                right: mediaquery.width * .5,
-                                child: Image.asset(
-                                  scale: 3.5,
-                                  AppImages.MaskPng,
-                                  color: AppColors.blackColor,
-                                ),
-                              );
+      top: 10,
+      right: mediaquery.width * .5,
+      child: Image.asset(
+        scale: 3.5,
+        AppImages.MaskPng,
+        color: AppColors.blackColor,
+      ),
+    );
   }
 }

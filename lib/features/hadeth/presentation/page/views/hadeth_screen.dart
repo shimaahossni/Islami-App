@@ -1,4 +1,4 @@
-// features/hadeth/page/views/hadeth_screen.dart
+// features/hadeth/presentation/page/views/hadeth_screen.dart
 import 'dart:ui';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -11,10 +11,10 @@ import 'package:islami/core/custom_widget/bg_positioned.dart';
 import 'package:islami/core/functions/text_font.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_images.dart';
-import 'package:islami/features/hadeth/page/widget/slider_bg_image.dart';
-import 'package:islami/features/hadeth/page/widget/slider_bg_pos_one.dart';
-import 'package:islami/features/hadeth/page/widget/slider_bg_pos_three.dart';
-import 'package:islami/features/hadeth/page/widget/slider_bg_pos_two.dart';
+import 'package:islami/features/hadeth/presentation/page/widget/slider_bg_image.dart';
+import 'package:islami/features/hadeth/presentation/page/widget/slider_bg_pos_one.dart';
+import 'package:islami/features/hadeth/presentation/page/widget/slider_bg_pos_three.dart';
+import 'package:islami/features/hadeth/presentation/page/widget/slider_bg_pos_two.dart';
 import 'package:islami/features/hadeth/presentation/bloc/hadith_time_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/features/setting/data/setting_provider.dart';
@@ -81,7 +81,8 @@ class _HadethScreenState extends State<HadethScreen> {
                         reverse: false,
                         autoPlay: true,
                         autoPlayInterval: const Duration(seconds: 5),
-                        autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                        autoPlayAnimationDuration:
+                            const Duration(milliseconds: 800),
                         autoPlayCurve: Curves.fastOutSlowIn,
                         enlargeCenterPage: true,
                         enlargeFactor: 0.25,

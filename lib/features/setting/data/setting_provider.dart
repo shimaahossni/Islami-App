@@ -1,11 +1,11 @@
 // features/setting/data/setting_provider.dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:islami/features/hadeth/page/views/hadeth_screen.dart';
-import 'package:islami/features/prayerTime/page/views/prayer_time_screen.dart';
-import 'package:islami/features/quran/page/views/quran_screen.dart';
-import 'package:islami/features/seb7a/page/views/seb7a_screen.dart';
-import 'package:islami/features/today_werd/page/views/today_werd.dart';
+import 'package:islami/features/hadeth/presentation/page/views/hadeth_screen.dart';
+import 'package:islami/features/prayerTime/presentation/page/views/prayer_time_screen.dart';
+import 'package:islami/features/quran/presentation/page/views/quran_screen.dart';
+import 'package:islami/features/seb7a/presentation/page/views/seb7a_screen.dart';
+import 'package:islami/features/today_werd/presentation/page/views/today_werd.dart';
 
 class SettingProvider extends ChangeNotifier {
   late List<Widget> screens;

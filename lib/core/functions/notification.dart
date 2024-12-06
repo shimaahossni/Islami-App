@@ -77,11 +77,10 @@ class NotificationService {
   }
 
   ///////////////list of time
-static Future<void> scheduleNotificationList(
+  static Future<void> scheduleNotificationList(
       int id, String title, String body, List<DateTime> prayerTimesList) async {
     const AndroidNotificationDetails androidDetails =
-        AndroidNotificationDetails(
-            'channelId', 'Prayer Times Notifications',
+        AndroidNotificationDetails('channelId', 'Prayer Times Notifications',
             channelDescription: 'Notification for prayer times',
             importance: Importance.max,
             priority: Priority.high);
@@ -100,8 +99,78 @@ static Future<void> scheduleNotificationList(
         notificationDetails,
         //androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
-            UILocalNotificationDateInterpretation.absoluteTime, androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+            UILocalNotificationDateInterpretation.absoluteTime,
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
       );
     }
+  }
+
+  static Future<void> repeatedNotification(
+      int id, String title, String body) async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+      'test_channel',
+      'test Notifications',
+    );
+    const NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await FlutterLocalNotificationsPlugin().periodicallyShow(
+        id,
+        title,
+        body,
+        RepeatInterval.everyMinute, // everyMinute, hourly, daily, weekly
+        platformChannelSpecifics,
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle);
+  }
+
+  static Future<void> repeated(
+    int id,
+    String title,
+    String body,
+  ) async {
+    await flutterLocalNotificationsPlugin.periodicallyShow(
+      id,
+      title,
+      body,
+      // repeated every four hours
+      RepeatInterval.hourly,
+
+      const NotificationDetails(
+        iOS: DarwinNotificationDetails(),
+        android: AndroidNotificationDetails(
+          'reminder_channel',
+          'Reminder Channel',
+          importance: Importance.high,
+          priority: Priority.high,
+        ),
+      ),
+      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+    );
+  }
+
+  static void schedulePrayerTimesNotificationList(
+      int id, String title, String body, DateTime scheduledTime) {
+    flutterLocalNotificationsPlugin.zonedSchedule(
+      id,
+      title,
+      body,
+      tz.TZDateTime.from(
+          scheduledTime, tz.local), // Convert to timezone-aware DateTime
+      const NotificationDetails(
+
+        android: AndroidNotificationDetails(
+          'channelId',
+          'channelName',
+          channelDescription: 'channelDescription',
+          enableVibration: true,
+          sound: RawResourceAndroidNotificationSound('notification'),
+        ),
+      ),
+
+      uiLocalNotificationDateInterpretation:
+          UILocalNotificationDateInterpretation.absoluteTime,
+      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+
+    );
   }
 }

@@ -1,4 +1,4 @@
-// features/today_werd/page/views/today_werd.dart
+// features/today_werd/presentation/page/views/today_werd.dart
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,10 +15,10 @@ import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_images.dart';
 import 'package:islami/features/setting/data/setting_provider.dart';
 import 'package:islami/features/today_werd/data/task_model.dart';
-import 'package:islami/features/today_werd/page/views/add_new_task.dart';
-import 'package:islami/features/today_werd/page/widget/date_time.dart';
+import 'package:islami/features/today_werd/presentation/page/views/add_new_task.dart';
+import 'package:islami/features/today_werd/presentation/page/widget/date_time.dart';
 import 'package:date_picker_timeline/date_picker_widget.dart';
-import 'package:islami/features/today_werd/page/widget/task_item.dart';
+import 'package:islami/features/today_werd/presentation/page/widget/task_item.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 

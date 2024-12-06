@@ -5,12 +5,11 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
 class AdhanService {
- static  String? _currentAddress;
- static   Position? _currentPostion;
-   Position? get currentPostion => _currentPostion;
+  static String? _currentAddress;
+  static Position? _currentPostion;
+  Position? get currentPostion => _currentPostion;
 
-
- static Future<bool> _handleLocationPersmission() async {
+  static Future<bool> _handleLocationPersmission() async {
     bool serviceEnabled;
     LocationPermission permission;
     serviceEnabled = await Geolocator.isLocationServiceEnabled();

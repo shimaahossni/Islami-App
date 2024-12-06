@@ -1,4 +1,4 @@
-// features/today_werd/page/views/add_new_task.dart
+// features/today_werd/presentation/page/views/add_new_task.dart
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:intl/intl.dart';
@@ -7,8 +7,8 @@ import 'package:islami/core/services/app_local_storage.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/features/setting/data/setting_provider.dart';
 import 'package:islami/features/today_werd/data/task_model.dart';
-import 'package:islami/features/today_werd/page/widget/custom_button.dart';
-import 'package:islami/features/today_werd/page/widget/textfieldflorm_widget.dart';
+import 'package:islami/features/today_werd/presentation/page/widget/custom_button.dart';
+import 'package:islami/features/today_werd/presentation/page/widget/textfieldflorm_widget.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 

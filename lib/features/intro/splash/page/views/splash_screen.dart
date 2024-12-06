@@ -6,7 +6,7 @@ import 'package:islami/core/functions/navigation.dart';
 import 'package:islami/core/services/app_local_storage.dart';
 import 'package:islami/core/utils/app_images.dart';
 import 'package:islami/features/intro/onboard/page/views/onboard.dart';
-import 'package:islami/features/navigationBar/page/views/navigation_bar.dart';
+import 'package:islami/features/navigationBar/presentation/page/views/navigation_bar.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

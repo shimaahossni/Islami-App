@@ -1,4 +1,4 @@
-// features/quran/page/views/quran_screen.dart
+// features/quran/presentation/page/views/quran_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
@@ -10,15 +10,18 @@ import 'package:islami/core/functions/text_font.dart';
 import 'package:islami/core/services/app_local_storage.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_images.dart';
-import 'package:islami/features/quran/page/views/surah_details.dart';
-import 'package:islami/features/quran/page/widgets/read_bar_text.dart';
-import 'package:islami/features/quran/page/widgets/recently_read.dart';
-import 'package:islami/features/quran/page/widgets/search_textfield.dart';
+import 'package:islami/features/quran/presentation/page/views/aya_of_the_day.dart';
+import 'package:islami/features/quran/presentation/page/views/surah_details.dart';
+import 'package:islami/features/quran/presentation/page/widgets/read_bar_text.dart';
+import 'package:islami/features/quran/presentation/page/widgets/recently_read.dart';
+import 'package:islami/features/quran/presentation/page/widgets/search_textfield.dart';
 import 'package:islami/features/quran/data/repo/quran_service.dart';
 import 'package:islami/features/setting/data/setting_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:quran/quran.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import '../../../data/model/recieve/ayah_of_the_day/aya_of_the-day.dart';
 
 class QuranScreen extends StatefulWidget {
   const QuranScreen({super.key});
@@ -84,6 +87,8 @@ class _QuranScreenState extends State<QuranScreen> {
               children: [
                 Gap(mediaquery.height * .1),
                 SvgPicture.asset(AppImages.Islami_logo_textSvg),
+                TextButton(onPressed: () => pushTo(context,const AyaScreen()), child:const Text("")),
+
                 ////////////////////////////////////////////search bar
                 Gap(mediaquery.height * .03),
 

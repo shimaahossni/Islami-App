@@ -8,7 +8,7 @@ import 'package:islami/core/functions/text_font.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_images.dart';
 import 'package:islami/features/intro/onboard/data/onboard_class.dart';
-import 'package:islami/features/navigationBar/page/views/navigation_bar.dart';
+import 'package:islami/features/navigationBar/presentation/page/views/navigation_bar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class OnBoardScreen extends StatefulWidget {

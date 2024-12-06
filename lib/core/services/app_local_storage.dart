@@ -7,6 +7,7 @@ class AppLocalStorage {
   static late Box<TaskMdel> taskBox;
   static late Box sebhaBox;
   static late Box notificationBox;
+  static late Box AyahBox;
 
   static String nameKey = "nameKey";
   static String suraArabicKey = "suraArabicKey";
@@ -15,13 +16,14 @@ class AppLocalStorage {
   static String sebhaKey = "sebhakey";
   static String isUpload = "isUploadKey";
   static String notificationKey = "notificationKey";
-
+  static String AyahKey = "AyahKey";
 
   static init() {
     userBox = Hive.box('user');
     taskBox = Hive.box<TaskMdel>('task');
     sebhaBox = Hive.box('sebha');
     notificationBox = Hive.box('notification');
+    AyahBox = Hive.box('Ayah');
   }
 
 //////////////////////////////////////////////////////////////////////user box functions
@@ -60,6 +62,17 @@ class AppLocalStorage {
     return notificationBox.get(key);
   }
 
+  //////////////////////////////////////////////////////////////////////Ayah box functions
+  static cachedAyahData(String key, dynamic value) {
+    AyahBox.put(key, value);
+  }
+
+  static getCachedAyahData(String key) {
+    return AyahBox.get(key);
+  }
+
+  //clear caching
+  static clearCaching() {
+    AyahBox.clear();
+  }
 }
-
-

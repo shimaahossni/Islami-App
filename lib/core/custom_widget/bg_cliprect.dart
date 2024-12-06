@@ -13,14 +13,14 @@ class BgCliprect extends StatelessWidget {
   Widget build(BuildContext context) {
     var vm = Provider.of<SettingProvider>(context);
     return ClipRect(
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
-              child: Container(
-                color: vm.isDark()
-                    ? AppColors.blackColor.withOpacity(.3)
-                    : AppColors.whiteColor.withOpacity(.1),
-              ),
-            ),
-          );
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+        child: Container(
+          color: vm.isDark()
+              ? AppColors.blackColor.withOpacity(.3)
+              : AppColors.whiteColor.withOpacity(.1),
+        ),
+      ),
+    );
   }
 }

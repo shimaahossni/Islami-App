@@ -1,4 +1,4 @@
-// features/prayerTime/page/views/prayer_time_screen.dart
+// features/prayerTime/presentation/page/views/prayer_time_screen.dart
 import 'dart:math';
 import 'dart:ui';
 import 'package:adhan/adhan.dart';
@@ -17,8 +17,8 @@ import 'package:islami/core/functions/notification.dart';
 import 'package:islami/core/functions/text_font.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_images.dart';
-import 'package:islami/features/prayerTime/page/views/evening_screen_another.dart';
-import 'package:islami/features/prayerTime/page/widget/azkar_gridview.dart';
+import 'package:islami/features/prayerTime/presentation/page/views/evening_screen_another.dart';
+import 'package:islami/features/prayerTime/presentation/page/widget/azkar_gridview.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';

@@ -1,16 +1,16 @@
-// features/navigationBar/page/views/navigation_bar.dart
+// features/navigationBar/presentation/page/views/navigation_bar.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:islami/core/functions/text_font.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/app_icons.dart';
-import 'package:islami/features/hadeth/page/views/hadeth_screen.dart';
-import 'package:islami/features/prayerTime/page/views/prayer_time_screen.dart';
-import 'package:islami/features/quran/page/views/quran_screen.dart';
-import 'package:islami/features/seb7a/page/views/seb7a_screen.dart';
+import 'package:islami/features/hadeth/presentation/page/views/hadeth_screen.dart';
+import 'package:islami/features/prayerTime/presentation/page/views/prayer_time_screen.dart';
+import 'package:islami/features/quran/presentation/page/views/quran_screen.dart';
+import 'package:islami/features/seb7a/presentation/page/views/seb7a_screen.dart';
 import 'package:islami/features/setting/data/setting_provider.dart';
-import 'package:islami/features/setting/page/views/setting_screen.dart';
-import 'package:islami/features/today_werd/page/views/today_werd.dart';
+import 'package:islami/features/setting/presentation/page/views/setting_screen.dart';
+import 'package:islami/features/today_werd/presentation/page/views/today_werd.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 

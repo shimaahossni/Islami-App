@@ -10,11 +10,11 @@ class SliderBgPosOne extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaquery = MediaQuery.of(context).size;
     return Positioned(
-                                  bottom: 0,
-                                  child: Image.asset(
-                                    AppImages.Mask1Png,
-                                    width: mediaquery.width / 1.2,
-                                    color: AppColors.blackColor.withOpacity(.5),
-                                  ));
+        bottom: 0,
+        child: Image.asset(
+          AppImages.Mask1Png,
+          width: mediaquery.width / 1.2,
+          color: AppColors.blackColor.withOpacity(.5),
+        ));
   }
 }

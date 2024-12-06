@@ -87,6 +87,7 @@
     "sleeping_azkar":"اذكار النوم",
     "morning_azkar":"اذكار الصباح",
     "qiblah":"القبلة",
-    "search_surah_name":"ابحث عن اسم السورة"
+    "search_surah_name":"ابحث عن اسم السورة",
+    "sura_of_this_day_is":"سورة اليوم"
 
 }

@@ -15,4 +15,4 @@ class OnboardFive extends StatelessWidget {
     );
   }
 }
-//Holy Quran 
+//Holy Quran
